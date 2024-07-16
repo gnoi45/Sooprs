@@ -1,0 +1,114 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.main-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.centered > h6 {
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.centered > p {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .centered > h6 {
+    font-size: 15px;
+    margin-top: 75px;
+    line-height: 10px;
+  }
+  .centered > p {
+    font-size: 13px;
+    line-height: 16px;
+    margin-bottom: 5rem;
+    display: block;
+    font-weight: 400;
+  }
+}
+.safety-shield > p {
+  text-align: center;
+  font-size: 27px;
+  font-weight: 400;
+  line-height: 34px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 25px;
+
+}
+
+.data_encryption > h5 {
+  margin-left: 20px;
+  margin-top: 15px;
+}
+.data_encryption > p {
+  font-size: 15px;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.without_Hitch > h5 {
+  font-size: 27px;
+  font-weight: 500;
+  text-align: center;
+  margin-top: 20px;
+}
+.Safeguarding > p {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.lock_images {
+  text-align: center;
+  margin-top: 40px;
+}
+.Identify_verification > h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.Identify_verification > p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 0px 80px 0px 80px;
+}
+.safe_payment > h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.safe_payment > p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 0px 80px 0px 80px;
+}
+.Encrypted_communication > h5 {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.Encrypted_communication > p {
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding: 0px 80px 0px 80px;
+}

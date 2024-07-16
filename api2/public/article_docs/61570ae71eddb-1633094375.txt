@@ -1,0 +1,38 @@
+
+1.registration api- check if user already present with vendorId. currently user unable to singup in
+	other vendor's website.
+
+(https://shopninja.in/pwa_APIs/new-api2/public/index.php/createcustomer)
+
+
+2. login API - check if user is registered in particular vendor website. currently user can login
+	in every vendor's website after registering on any of the vendor's site.
+
+(https://shopninja.in/pwa_APIs/new-api2/public/index.php/getwlogin)
+
+
+2.check API getvcustomers... error is coming..
+
+(https://shopninja.in/pwa_APIs/api2/public/index.php/getvcustomers)
+
+
+3.social login and registration-- check if vendor(admin) is trying to login first time through social 
+	button then we will call registration api and then we will not mandatory the mobile number and password.
+	if second time or further more then login api will be called...
+
+(https://shopninja.in/pwa_APIs/new-api2/public/index.php/socialRegistration)
+
+
+4.buyers address api
+
+(https://shopninja.in/pwa_APIs/new-api2/public/index.php/buyersaddress)
+
+5.update order status
+
+(https://shopninja.in/pwa_APIs/new-api2/public/index.php/updateOrders)
+
+6.create vendor query
+(https://shopninja.in/pwa_APIs/new-api2/public/index.php/createvendorquery)
+
+
+

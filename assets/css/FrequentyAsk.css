@@ -1,0 +1,146 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+
+.Category > p {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 4rem;
+}
+.main-title > p {
+  font-size: 39px;
+  font-weight: 700;
+}
+.main-title > input {
+  width: 494px;
+  height: 52px;
+  box-shadow: 0px 5px 16px 0px rgba(0, 0, 0, 0.25);
+
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  border: none;
+}
+
+@media (max-width: 550px) {
+  .main-title > p {
+    font-size: 25px;
+  }
+  .main-title > input {
+    width: 80%;
+  }
+}
+
+@media (max-width: 550px) {
+  .Category > p {
+    font-size: 20px;
+    margin-top: 1rem;
+    font-family: 300;
+    padding: 5px 10px 5px 10px;
+  }
+}
+
+.container > p {
+  font-size: 39px;
+  font-weight: 700;
+  text-align: center;
+}
+.accordion-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.card-body > h5 {
+  font-size: 29px;
+  font-weight: 600;
+  line-height: 31px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+.question {
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+  margin-top: 30px;
+}
+.number {
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 10px;
+  text-align: center;
+}
+.faster {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.text-center > h5 {
+  font-size: 39px;
+  font-weight: 700;
+}
+
+.text-center > p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.filedName > input {
+  width: 344px;
+  height: 52px;
+  gap: 0px;
+  border-radius: 7px;
+  border: 1px solid;
+  opacity: 0px;
+  padding-left: 15px;
+  border: 1.3px solid rgba(215, 215, 215, 1);
+}
+.feedback > textarea {
+  width: 707px;
+  height: 168px;
+  gap: 0px;
+  border-radius: 7px;
+  opacity: 0px;
+  border: 1.3px solid rgba(215, 215, 215, 1);
+  padding-left: 10px;
+  padding-top: 5px;
+}
+.message {
+  width: 154px;
+  height: 40px;
+  opacity: 0px;
+  border-radius: 2px;
+  background: rgba(0, 119, 255, 1);
+  color: white;
+  border: none;
+  margin-top: 20px;
+}
+
+@media (max-width: 450px) {
+  .feedback > textarea {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .filedName > input {
+    width: 100%;
+  }
+}
+
+
+
+/* .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+  color: var(--bs-nav-pills-link-active-color);
+  border: var(--bs-nav-pills-link-active-bg)!important;
+} */
+
+.nav-pills .nav-link.active .card,
+.nav-pills .show > .nav-link .card {
+    border: 2px solid #006aff;
+}

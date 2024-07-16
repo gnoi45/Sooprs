@@ -1,0 +1,55 @@
+public function milestone_payment_status($lead_id, $milStonId) {
+    $sql = "SELECT * FROM milestones WHERE project_id = '$lead_id'";
+    $result = $this->query($sql);
+    
+    if ($result->num_rows > 0) {
+        $milestones_sql = "SELECT * FROM milestones WHERE project_id = '$lead_id' AND payment_status = 0 LIMIT 1";
+        $milestones_sql_result = $this->query($milestones_sql);
+        
+        if ($milestones_sql_result->num_rows > 0) {
+            $milestones_sql_row = $milestones_sql_result->fetch_assoc();
+            
+            // Check if payment_status is 0
+            if ($milestones_sql_row['payment_status'] == 0) {
+                return $milestones_sql_row; // Found milestone with payment_status 0
+            } else {
+                // Check if completed status is 0
+                if ($milestones_sql_row['completed_status'] == 0) {
+                    return "Completed status is 0 for milestone with payment_status 1"; // Completed status is 0 for milestone with payment_status 1
+                } else {
+                    return "Completed status is 1 for milestone with payment_status 1"; // Completed status is 1 for milestone with payment_status 1
+                }
+            }
+        } else {
+            return 3; // No milestone with payment_status 0 found
+        }
+    } else {
+        return 2; // No milestone found for the project_id
+    }
+}
+
+
+
+
+ // milestone payment status 
+  public function milestone_payment_status($lead_id,$milStonId) {
+    
+    $sql = "SELECT * FROM milestones WHERE project_id = '$lead_id'";
+    $result = $this->query($sql);
+    if ($result->num_rows > 0) {
+      // while ($row = $result->fetch_assoc()) {
+          $milestones_sql = "SELECT * FROM milestones WHERE project_id = '".$lead_id."' AND payment_status = 0 LIMIT 1";
+          $milestones_sql_result = $this->query($milestones_sql);
+          
+          if ($milestones_sql_result->num_rows > 0) {
+              $milestones_sql_row = $milestones_sql_result->fetch_assoc();              
+              return $milestones_sql_row; // Found milestone with status 0 and payment_status 0
+          }
+          
+      // }
+      
+      return 3; // No milestone with status 0 and payment_status 0 found
+    } else {
+      return 2;
+    }
+  }

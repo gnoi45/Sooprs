@@ -1,0 +1,171 @@
+#exampleModalLongTitle{
+    padding-bottom: 1em;
+    font-size: 1.4em;
+    line-height: 1.5;
+    /* text-align: center; */
+    padding-left: 3em;
+   
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');*{margin: 0;padding: 0;box-sizing: border-box;font-family: 'Poppins', sans-serif}
+p{margin: 0%}
+body{height: 100vh;background-color: bisque;}
+.container{background: white;}
+label.box{display: flex;margin-top: 10px;padding: 10px 12px;border-radius: 5px;cursor: pointer;border: 1px solid #ddd}
+#one:checked~label.first, #two:checked~label.second, #three:checked~label.third, #four:checked~label.forth, #five:checked~label.fifth, #six:checked~label.sixth, #seven:checked~label.seveth, #eight:checked~label.eighth{border-color: #ddd}#one:checked~label.first .circle, #two:checked~label.second .circle, #three:checked~label.third .circle, #four:checked~label.forth .circle, #five:checked~label.fifth .circle, #six:checked~label.sixth .circle, #seven:checked~label.seveth .circle, #eight:checked~label.eighth .circle{border: 6px solid #2D7AF1;background-color: #fff}
+label.box:hover{background: whitesmoke}
+label.box .course{display: flex;align-items: center;width: 100%}label.box .circle{height: 22px;width: 22px;border-radius: 50%;margin-right: 15px;border: 2px solid #ddd;display: inline-block}input[type="radio"]{display: none}.btn.btn-primary{border-radius: 25px;margin-top: 20px}@media(max-width: 450px){.subject{font-size: 12px}}
+
+.subject{
+    color:  #6c7191;
+    border-radius: .3rem;
+    font-weight: 700;
+    font-size: 1rem;
+    
+}
+#email{
+    margin: 0;
+    font-family: inherit;
+    font-size: 1.4rem;
+    color: #6c757d;
+    line-height: inherit;
+    width: 100%;
+    background-clip: padding-box;
+    border: 1px solid rgba(0,0,0,.2);
+    border-radius: .3rem;
+    outline: 0;
+    padding: 1rem;
+}
+#back_button{
+    /* float: left;
+    position: relative;
+   
+    right: 15rem; */
+    position: absolute;
+    right: 20em;
+}
+
+@media (max-width:360px) {
+    #back_button{
+        float: left;
+        position: relative;
+        /* padding-right: 10rem; */
+        right: 6rem;
+    }
+     
+}
+@media(max-width: 768px){
+    .gokul{
+        height: 600px;
+    }
+}
+
+     
+
+.spr_popup_heading {
+    margin-left: 5rem;
+    position: relative;
+    left: 5rem;
+
+}
+
+.close.sprs_close {
+    position: absolute;
+    background: none;
+    border: 0px;
+   top: .5rem;
+   /* font-size: 3rem; */
+   
+}
+
+.sprs_header {
+    width: 100%;
+    height: auto;
+    padding:5px;
+}
+
+.sprs_custom {
+    background: white !important;
+}
+.close{
+    border: none;
+    background-color: #fff;
+    font-size: -64px;
+    top: -16px;
+    position: absolute;
+    left: 29em;
+
+}
+.close span{
+    font-size: 2em;
+    color:#857c7c ;
+}
+.close_button{
+    border: none;
+    background: none;
+    position: absolute;
+    left: 29rem;
+    top: -.5em;
+}
+.close_button span{
+    font-size: 2em;
+    color:#857c7c;
+}
+
+
+@media screen (max-width:600px){
+    .close.sprs_close {
+        position: absolute;
+        background: none;
+        border: 0px;
+        font-size: 2em;
+        color: #857c7c;
+        top: -5px;
+        right: 10px;
+    }
+}
+
+
+@media screen (max-width:600px){
+   .close{
+    position: absolute;
+        background: none;
+        border: 0px;
+        font-size: 2em;
+        /* color: #857c7c; */
+        color:red;
+        top: -5px;
+        font-size:4em;
+        /* right: 10px; */
+   }
+
+   
+}
+
+@media only screen and (max-width:600px) {
+    .close_button{
+        border: none;
+        background: none;
+        position: absolute;
+        left: 25rem;
+        top: -.5em;
+    }
+    .close_button span{
+        font-size: 2em;
+        color:#857c7c;
+    }
+}
+@media only screen and (max-width:450px) {
+    .close_button{
+        border: none;
+        background: none;
+        position: absolute;
+        left: 20rem;
+        top: -.5em;
+    }
+    .close_button span{
+        font-size: 2em;
+        color:#857c7c;
+    }
+}
+
+

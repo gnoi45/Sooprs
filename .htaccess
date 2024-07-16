@@ -1,0 +1,43 @@
+<IfModule mod_rewrite.c> 
+
+RewriteEngine On 
+RewriteCond %{REQUEST_FILENAME} !-f 
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+
+RewriteCond %{SERVER_PORT} 80
+#RewriteRule ^(.*)$ https://shopninja.in/sooprs/$1 [R,L]
+RewriteRule ^(.*)$ https://www.sooprs.com/$1 [R,L]
+#RewriteRule ^(.*)$ http://localhost/sooprs [R,L]
+
+
+#RewriteRule ^login$ login-professional [L]
+
+
+RewriteRule  ^service/([^/\.]+) service-page.php?slug=$1
+
+RewriteRule  ^professionals/([^/\.]+) professionals_all.php?slug=$1
+RewriteRule  ^professional/([^/\.]+) professional-page.php?slug=$1
+#RewriteRule  ^professional/manage-portfolio/([^/\.]+) manage-portfolio.php?slug=$1
+
+#RewriteRule  ^professional/([^/\.]+) professional-page.php?id=$1
+
+RewriteRule  ^lead/([^/\.]+) lead-page.php?id=$1
+RewriteRule  ^enquiry-detail/([^/\.]+) enquiry-detail.php?id=$1
+
+RewriteRule ^project-detail/([^/]+)/([^/]+) project-detail.php?id1=$1&id2=$2 [L]
+#RewriteRule  ^project-detail/([^/\.]+) project-detail.php?id=$1
+
+RewriteRule ^write-review/([^/]+)/([^/]+) send-review.php?id1=$1&id2=$2 [L]
+
+
+
+
+
+</IfModule>
+
+# php -- BEGIN cPanel-generated handler, do not edit
+# Set the “ea-php82” package as the default “PHP” programming language.
+<IfModule mime_module>
+  AddHandler application/x-httpd-ea-php82___lsphp .php .php8 .phtml
+</IfModule>
+# php -- END cPanel-generated handler, do not edit

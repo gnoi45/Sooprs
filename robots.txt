@@ -1,0 +1,4 @@
+User-Agent: *
+Allow: /
+
+SITEMAP: https://sooprs.com/sitemap.xml

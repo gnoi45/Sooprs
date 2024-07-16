@@ -1,0 +1,5 @@
+[21-Apr-2023 00:46:59 America/Chicago] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 8.1.0". You are running 7.4.33. in /home3/shopndto/sooprs.com/sooprs_admn/vendor/composer/platform_check.php on line 24
+[04-Nov-2023 12:11:46 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in /home3/shopndto/sooprs.com/sooprs_admn/app/Http/Controllers/ProfessionalController.php on line 54
+[04-Nov-2023 12:15:11 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in /home3/shopndto/sooprs.com/sooprs_admn/app/Http/Controllers/ProfessionalController.php on line 54
+[04-Nov-2023 12:16:34 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in /home3/shopndto/sooprs.com/sooprs_admn/app/Http/Controllers/ProfessionalController.php on line 54
+[04-Nov-2023 12:16:50 UTC] PHP Fatal error:  Maximum execution time of 60 seconds exceeded in /home3/shopndto/sooprs.com/sooprs_admn/app/Http/Controllers/ProfessionalController.php on line 54
